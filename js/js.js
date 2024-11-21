@@ -103,3 +103,23 @@
 //   e.preventDefault();
 //   console.log('Navigation to', e.target.textContent, 'was prevented');
 // });
+
+
+// 10th vid
+// var btns = document.querySelectorAll('#book-list .delete');
+
+// Array.from(btns).forEach(function(btn){
+//     btn.addEventListener('click'.function(e) {
+//         const li = e.target.parentElement;
+//         li.parentNode.removeChild(li);
+//     });
+// });
+const list = document.querySelector('#book-list ul');
+
+//delete book
+list.addEventListener('click'.function(e){
+    if(e.target.className == 'delete'){
+        const li = e.target.parentElement;
+        list.removeChild(li);
+    }
+});
