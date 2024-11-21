@@ -68,3 +68,5 @@
 // Array.from(titles).forEach(function(title){
 //   console.log(title.textContent);
 // });
+
+
